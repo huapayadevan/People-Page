@@ -1,5 +1,5 @@
 // basic jquery function:
-$.fn.blueHover = function() {
+$.fn.linkHover = function() {
 	
 	
 	this.hover(function(){
@@ -19,16 +19,19 @@ $.fn.blueHover = function() {
 // function called when document is loaded
 $(function() {
 
-	$("a").blueHover();
+	$("a").linkHover();
 
-	$('#nav').onePageNav();
-// ----- function to animate the css of #howdy text on main page -----------------------------------------------------------------
-
-	$('#howdy').hover(function(){
-		$('#howdy').animate({color: 'rgba(0, 0, 0, 0.6)'},150);
-	},
-        function(){
-           $(this).animate({color: '#800000'},150);
-    });
+	$('#nav').onePageNav({
+		currentClass: 'current',
+		changeHash: false,
+		scrollSpeed: 750,
+		scrollOffset: 30,
+		scrollThreshold: 0.5,
+		filter: '',
+		easing: 'swing',
+		scrollChange: function($currentListItem) {
+			//I get fired when you enter a section and I pass the list item of the section
+		}
+	});
 	
 });
