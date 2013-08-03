@@ -46,6 +46,7 @@ h1{
 
 li{
 	display:inline;
+	position: fixed;
 }
 
 a:link,a:visited{
@@ -97,17 +98,11 @@ p{
 }
 
 #howdy{	
-	
-	font-weight:bold;
+	font-weight: normal;
 	font-size:60px;
-	color:#4998FE;
-	text-shadow:-1px 0 black, 
-				0 1px black, 
-				1px 0 black, 
-				0 -1px black,  
-				0px 4px 3px rgba(0,0,0,0.4),
-				0px 8px 13px rgba(0,0,0,0.1), 
-				0px 18px 23px rgba(0,0,0,0.1);
+	color:#800000;
+	text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+	
 }
 
 #resumePdf{
