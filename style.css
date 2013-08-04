@@ -5,12 +5,14 @@
  *box-shadow:	[horizontal]px [vertical]px [blur]px [spread]px [color];
  */
 	
-	
+/* attempt at inserting font family*/	
 @font-face {
     font-family: LHLineSans-Thin;
     src: url(font\LH-Line1-Sans-Thin.otf) format(opentype);
 }
 
+
+/* body and main div */
 body {
 	background:  url("images/bottom.png") no-repeat fixed center bottom / 90px 70px #CCC;
 }
@@ -32,6 +34,7 @@ div.main{
 	margin-left: 15px;
 }
 
+/* headers and name */
 h1{
 	margin-bottom: 1%;
 	margin-top: 2%;
@@ -44,26 +47,50 @@ h1{
 	font-size: 4em; 
 }
 
-li{
-	display:inline;
-	position: fixed;
+#name{
+    margin-top: 3%;
 }
 
-a:link,a:visited{
-	padding:15px;
-	margin-left: -15px;
-	
-	font-size: 1.3em;
+
+/*one page nav list */
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+#nav {
+	z-index: 2;
+	background: #CCC;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+#nav li {
+	display: inline-block;
+}
+#nav a {
+	margin-left: 15px;
 	color:#FAF6EF;
-	text-decoration:none;
+	display: block;
+	padding: 5px 10px;
+	
+	
+	font-size: 1.2em;
+	text-decoration: none;
 	textShadow: 0px 0px 4px #000;
 }
-
-a.current{
+#nav a:hover {
+	color: #dedede;
+}
+#nav .current a {
 	color:#800000;
 	textShadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
 }
 
+
+/* text formating */
 p{	
 	margin-left:5px;
 	margin-right:5px;
@@ -76,14 +103,7 @@ p{
 			0px 0px 23px rgba(255,255,255,0.1);
 }
 
-			 
-
-
-#test{
-	color: rgba(0,0,0,0.6);
-	text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
-}
-
+/* front page elements */
 #me {
 	margin-left:auto;
 	margin-right:auto;
@@ -105,10 +125,25 @@ p{
 	
 }
 
+
+/* Resume */
+.resumeContainer{
+    position: relative;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
 #resumePdf{
-   overflow-x: hidden;
-    overflow-y: hidden;
+    margin-left: auto;
+    margin-right: auto;
+	
+    min-height: 650px;
+    min-width: 700px;
     
-    min-height:900px;
-    min-width: 500px;
+    border-style:inset;
+    border-color:grey black black black;
+    
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+    
 }

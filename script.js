@@ -19,7 +19,7 @@ $.fn.linkHover = function() {
 // function called when document is loaded
 $(function() {
 
-	//$("a").linkHover();
+	$("li").linkHover();
 
 	$('#nav').onePageNav({
 		currentClass: 'current',
