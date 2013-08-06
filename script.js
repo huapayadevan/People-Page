@@ -18,20 +18,25 @@ $.fn.linkHover = function() {
 	
 // function called when document is loaded
 $(function() {
-
+	
+	$.stellar({
+		  horizontalScrolling: false
+	});
+	
 	$("li").linkHover();
 
 	$('#nav').onePageNav({
-		currentClass: 'current',
-		changeHash: false,
-		scrollSpeed: 750,
-		scrollOffset: 30,
-		scrollThreshold: 0.5,
-		filter: '',
-		easing: 'swing',
-		scrollChange: function($currentListItem) {
-			//I get fired when you enter a section and I pass the list item of the section
-		}
+		scrollOffset: 60
+	});
+	
+	$(".contact").hover(function(){
+			$(this).animate({color: '#000'},150);
+			$(this).removeClass("blackShadow",150);
+			$(this).addClass("whiteShadow",150);
+		},function(){
+			$(this).animate({color: '#FFF'},150);
+			$(this).removeClass("whiteShadow", 150);
+			$(this).addClass("blackShadow", 150);
 	});
 	
 });
