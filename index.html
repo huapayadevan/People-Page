@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="description" content="This is my webpage, there are many like it, but this is mine">
+	<!--Main JQuery Library--> 
+	<script src="jlib/jquery-1.9.1.min.js"></script>
+	<!-- Plugin for color animation -->
+	<script src="jlib/jquery.animate-colors-min.js"></script><!-- to animate colors -->
+	<!-- Plugin for scrolling pictures on gallery page -->
+	<script src="jlib/jquery-scrolltofixed.js"></script>
+	<!-- Plugin for scrolling naviagation -->
+	<script src="jlib/jquery.scrollTo.js"></script>
+	<script src="jlib/jquery.nav.js"></script>
+	<!-- Plugin for Parrallax scrolling -->
+	<script src="jlib/jquery.stellar.js"></script>
+	<!-- Javascript file -->
+	<script src="script.js"></script>	
+	<link rel="stylesheet" href='style.css'>
+	<title>Devan Huapaya</title>
+</head>
+
+<body data-stellar-background-ratio="0.5" > 
+		
+		<!-------------------------------------- Main Container -------------------------------------->
+		
+		<div class="main" id="Home">
+			
+			<ul id="nav">
+				<li class="current"><a href="#Home" id="homeLink" >Home</a></li>
+				<li><a href="#Philosophy" 	id="philosophyLink">Philosophy</a></li>
+				<li><a href="#Resume" 	id="resumeLink">Resume</a></li>
+				<li><a href="#Courses" 	id="coursesLink">Course Work</a></li>
+				<li><a href="#Contact" id="contactLink">Contact</a></li>
+				<li><a href="#Secret" 	id="secretLink">Secret</a></li>
+			</ul>
+			
+			<!------------------------------ Parrallax Background Elements ------------------>
+			<div class="planet" data-stellar-horizontal-offset="0" data-stellar-ratio="0.4" data-stellar-background-ratio="0.05" ></div>
+			<!--<div class="triangle" data-stellar-ratio="0.4" data-stellar-horizontal-offset="0"></div>-->
+			
+		<!-------------------------------------- Home Page -------------------------------------->
+			
+			<div class="section">	
+			
+				<h1 id="name" >Devan Huapaya</h1>
+				
+				<img id="me"   src="images/DevanHuapaya.jpg" alt="Me and some friends!" title="That's me on the right!" />
+				
+				<p >
+					<br>
+					<br>
+					<font id="howdy" class="whiteShadow">Howdy<i>!</i></font>
+					<br>
+					<br>
+					<br>
+					My name is Devan,
+				</p>
+				<p class="whiteShadow">
+					the adorably fuzzy gentleman in the picture above is me.<br>
+					I am a Computer Engineer at Texas A&M University.<br>
+				</p>
+				<p class="whiteShadow">
+					I live to insite inovation, find the why in every line of code,<br>
+					break the status quo, and draw cats.<br>
+				</p>
+				<br/>
+			</div>
+		<!-------------------------------------- Philosophy Page -------------------------------------->
+		
+			<div class="section" id="Philosophy" >
+				<h1>My Philosophy</h1>
+				
+				<p class="philosophyParagraph whiteShadow">
+					Start with why. Learn how to make it happen. Create something wonderful.
+				</p>
+				
+			</div>
+		<!-------------------------------------- Resume Page -------------------------------------->
+		
+			<div class="section" id="Resume">
+				<h1>Resume</h1>
+				
+				<img id="resumePdf" src="images/Resume.png" usemap="resumeMap">
+				<map id="resumeMap"><area shape="rect" href="docs/Resume.pdf"></map>
+
+			</div>
+		<!-------------------------------------- Course Work Page -------------------------------------->
+			<div class="section" id="Courses">
+				<h1>Course Work</h1>
+				
+			</div>			
+		<!-------------------------------------- Contact Page -------------------------------------->
+			<div class="section" id="Contact">
+				<h1>Contact</h1>
+				<div class="contactWrapper">
+					<p class="blackShadow">
+						If you would like to work with me, or just say hi,<br>
+						feel free to send me an email at:<br>
+						<br>
+						<br>
+						<a class="contact" href="mailto:huapayadevan@tamu.edu?subject=Howdy, I just visited your website!">
+							huapayadevan@tamu.edu
+						</a>
+					</p>
+					
+				</div>
+			</div>
+		</div>
+		
+</body>
