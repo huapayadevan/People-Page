@@ -15,6 +15,9 @@
 /* background */
 body {
 	margin: 0;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background:  url("images/noisy.png") repeat fixed center  bottom / 90px 70px #CCC;
 	
 }
 
@@ -25,28 +28,22 @@ body {
     background:  url("images/noisy.png") repeat fixed center  bottom / 90px 70px #CCC;
 }
 
-#Philosophy{
+#Philosophy{ 
     background-position: center bottom;
     background-attachment: fixed;
-    background:  url("images/purpleSpace.jpg") #CCC;
+    background: url("images/galaxy.jpg"); 
 }
 
 #Resume{
-    background-position: center bottom;
-    background-attachment: fixed;
-    background: url("images/bg1.jpg");
 }
 
 #Courses{
     background-position: center bottom;
     background-attachment: fixed;
-    background: url("images/milkyway.jpg");
+    background: url("images/bg1.jpg");
 }
 
-#Contact{
-    background-position: center bottom;
-    background-attachment: fixed;
-    background: url("images/galaxy.jpg");    
+#Contact{   
 }
 /* parrallax shapes! */
 .planet {

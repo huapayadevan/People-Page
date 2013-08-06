@@ -26,7 +26,7 @@ $(function() {
 	$("li").linkHover();
 
 	$('#nav').onePageNav({
-		scrollOffset: 60
+		scrollOffset: 20
 	});
 	
 	$(".contact").hover(function(){
