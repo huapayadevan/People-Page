@@ -14,9 +14,9 @@
 
 /* background */
 body {
-	background:  url("images/noisy.png") repeat fixed center  bottom / 90px 70px #CCC;
-	background-position: center bottom;
-	background-attachment: fixed;
+    background:  url("images/noisy.png") repeat fixed center  bottom / 90px 70px #F1F1F1;
+    background-position: center bottom;
+    background-attachment: fixed;
 }
 
 /* parrallax shapes! */
@@ -33,7 +33,7 @@ body {
     height: 2000px;
     left: -650px;
     position: fixed;
-    top: 600px;
+    top: 550px;
     width: 2000px;
     z-index: -1;
 }
@@ -64,29 +64,29 @@ div.main{
 	text-align: left;
 	line-height: 18pt;
 	color: black;
+        
 	
 }
 
 
 /* headers and name */
 h1{
-	margin-bottom: 1%;
-	margin-top: 30px;
+    margin-bottom: 1%;
+    margin-top: 30px;
+
+    padding-bottom: 20px;
+
+    font-weight: 100;	
+    color: rgba(255, 255, 255, 1);
+    font-size: 4em;
 	
-	padding-bottom: 20px;
 	
-	font-weight: 100;	
-	color: rgba(255, 255, 255, 1);
-	font-size: 4em;
-	
-	
-	/* text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6); */
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6),
 		 0px 0px 13px rgba(0,0,0,0.4),
 		 0px 0px 23px rgba(0,0,0,0.4);
 }
 #name{
-    margin-top: 4%;
+    margin-top: 50px;
 }
 
 
@@ -96,10 +96,9 @@ ul {
     padding: 0;
 }
 #nav {
-    z-index: 1;
-    
-    background:  url("images/noisy.png") repeat fixed center  bottom / 90px 70px #CCC;
-    background: #CCC;
+    z-index: 10;
+    /*background: #F1F1F1;*/
+    background:  url("images/noisy.png") repeat fixed center  bottom / 90px 70px #F1F1F1;
     left: 0;
     overflow: hidden;
     position: fixed;
@@ -116,7 +115,7 @@ ul {
 }
 #nav a {
 	margin-left: 15px;
-	color:#FAF6EF;
+	color:darkgray;
 	display: block;
 	padding: 5px 10px;
 	
@@ -126,7 +125,8 @@ ul {
 	textShadow: 0px 0px 4px #000;
 }
 #nav a:hover {
-	color: #dedede;
+	color: lightslategray;
+	textShadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
 }
 #nav .current a {
 	color:#800000;
@@ -142,7 +142,7 @@ p{
 	font-size: 1.5em;
 }
 .whiteShadow{
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.6),
+    text-shadow: 0px 0px 3px rgba(255,255,255,0.6),
 		 0px 0px 13px rgba(255,255,255,0.4),
 		 0px 0px 23px rgba(255,255,255,0.4);
 }
@@ -152,24 +152,51 @@ p{
 		 0px 0px 23px rgba(0,0,0,0.4);
 }
 .philosophyParagraph{
+    margin-top: 5%;
     display: block;
+    
     height: 200px;
     width: 100%;
-    overflow-x: hidden;
+}
+/* Focus */
+#Focus{
+    
+    color: #FAF6EF;
+}
+.course{
+    color: #50B9B9;
+}
+.person{    
+    color: #50B9B9;
+}
+.courseContainer{
+    float:left;
+}
+.sideDisplay{
+    background:  url("images/noisy.png") repeat fixed center  bottom / 90px 70px #CCC;
+    float:right;
+    width:20%;
+}
+
+.description{
+    color: deepskyblue;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.7),
+		 0px 0px 13px rgba(0,0,0,0.6),
+		 0px 0px 23px rgba(0,0,0,0.6);
     
 }
 
 /* front page elements */
 #me {
 	margin-left:auto;
-	margin-right:auto;
+	margin-right:10%;
 	display:block;
 	float:right;
 	border-style:inset;
 	border-color:grey black black black;
 	-webkit-box-shadow: 0 0 10px black;
         box-shadow: 0 0 10px black;
-	width: 300px;
+	width: 25%;
 	
 }
 
@@ -221,4 +248,11 @@ a{
     color: white;
     text-decoration: none;
     textShadow: 0px 0px 10px #000;
+}
+
+#hi{
+    color: dodgerblue;
+}
+#you{
+    color: dodgerblue;
 }
