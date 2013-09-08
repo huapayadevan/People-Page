@@ -1,3 +1,5 @@
+// browser test
+
 // basic jquery function:
 $.fn.linkHover = function() {
 	
@@ -13,11 +15,14 @@ $.fn.linkHover = function() {
 				
 	});
 };
-	
-	
+
+
 // function called when document is loaded
 $(function() {
-	
+	if( /Android|webOS|iPhone|iPod|BlackBerry|kindle|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$('link[href="style.css"]').attr('href','simpleStyle.css');	
+	}
+
         // intiate parallax elements plugin
 	$.stellar({
 		  horizontalScrolling: false
@@ -25,32 +30,31 @@ $(function() {
 	
         // initiate function for animation on course and person hover
 	$(".course").linkHover();
-	$(".person").linkHover();
+	$(".person").linkHover();	
         // initiate one page navigation plugin
 	$('#nav').onePageNav({
-		scrollOffset: 60
+		scrollOffset: 50
 	});
         
         
 	
         // hover animation over email contact
-	$(".contact").hover(function(){
-			$(this).animate({color: '#000'},150);
-			$(this).removeClass("blackShadow",150);
-			$(this).addClass("whiteShadow",150);
+	$(".contact").linkHover();
+        
+         // hover animation for name entity
+         
+         $("#name").hover(function(){                
+			$("#name").animate({color: '#B9E3E3'},150);
 		},function(){
-			$(this).animate({color: '#FFF'},150);
-			$(this).removeClass("whiteShadow", 150);
-			$(this).addClass("blackShadow", 150);
+			$("#name").animate({color: '#FFF'},150);
 	});
         
         // what you do contact sentence show/hide
         $('#you').hide();
+        $('#hi').linkHover();
         $('#hi').click(function(){
                 $('#you').show('medium');
         });
-        
-        
         
         // link hover animations for people on focus page
         $("#steveDescription").hide();
@@ -81,5 +85,22 @@ $(function() {
 			$("#daleDescription").hide();
 	});
         
+        // click animations for courses
+        $('#courseView').hide();
+        $(".compSci").click(function(){
+            $("#courseView").fadeIn('fast');
+            $("#courseDescription").attr("src", "pageslide/_compSci.html");
+        });
+        $(".ecen").click(function(){
+            $("#courseView").fadeIn();
+            $("#courseDescription").attr("src", "pageslide/_ecen.html");
+        });
+        $(".math").click(function(){
+            $("#courseView").fadeIn();
+            $("#courseDescription").attr("src", "pageslide/_math.html");
+        });
         
+         $('#courseView').click(function(){
+            $(this).fadeOut();
+         });
 });

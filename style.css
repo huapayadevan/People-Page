@@ -3,28 +3,36 @@
  *
  *text-shadow: [horizontal]px [vertical]px [blur]px [color];
  *box-shadow:	[horizontal]px [vertical]px [blur]px [spread]px [color];
+ *
+ *margin: [top] [left] [bottom] [right]
  */
-	
-/* attempt at inserting font family*/	
-@font-face {
-    font-family: LHLineSans-Thin;
-    src: url(font\LH-Line1-Sans-Thin.otf) format(opentype);
-}
-
 
 /* background */
+/*Possible background colors:
+#EEEEEE
+cadetblue
+#8DD4F7
+#1188FF
+#7BC7E7*/
 body {
-    background:  url("images/noisy.png") repeat fixed center  bottom / 90px 70px #F1F1F1;
+    background:  url("images/noisy.png") repeat fixed center  bottom / 90px 70px;
+	background-color:#5F9EA0;
     background-position: center bottom;
     background-attachment: fixed;
 }
-
+.simple{
+	display: none;
+}
+iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
 /* parrallax shapes! */
 .planet {
-    background-color: #800000;
-    background:  url("images/galaxy.jpg") repeat fixed center  bottom;
-    background-position: center bottom;
-    background-attachment: fixed;
+   background-color: #800000;
+    background:  url("images/galaxy.jpg") repeat center bottom fixed;
+    
     
     border-radius: 1000px 1000px 1000px 1000px;
     border-color: black;
@@ -37,26 +45,35 @@ body {
     width: 2000px;
     z-index: -1;
 }
-
-.triangle{
-    z-index: -2;
+/*    
+attempt at diamond shape
+.diamond{
+    height: 1000px;
+    left: 50%;
     position: fixed;
-    
-    width: 0px;
-    height: 0px;
-    
-    border-style: solid;
-    border-width: 1600px 600px 0 600px;
-    border-color: #a6a6a6 transparent  transparent;
-    box-shadow: inset 0px 0px  20px 10px rgba(0,0,0,0.6);
-    
-}
+    top: 1000px;
+    width: 1000px;
+     border:1px solid #000; 
+      background:  url("images/galaxy.jpg") repeat center bottom fixed;
+     margin:3px 0 0 30px;
+     -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+     -ms-transform: rotate(-45deg);
+     -o-transform: rotate(-45deg);
+     transform: rotate(-45deg);
+     -webkit-transform-origin: 0 100%;
+     -moz-transform-origin: 0 100%;
+     -ms-transform-origin: 0 100%;
+     -o-transform-origin: 0 100%;
+     transform-origin: 0 100%;
+     
+     z-index: -1;
+}*/
 
 
 /* main div */
 div{
-	min-height: 700px;
-	
+	min-height: 900px;
 }
 div.main{
 	font-family: 'American Typewriter', Georgia, serif;
@@ -64,17 +81,12 @@ div.main{
 	text-align: left;
 	line-height: 18pt;
 	color: black;
-        
 	
 }
-
 
 /* headers and name */
 h1{
     margin-bottom: 1%;
-    margin-top: 30px;
-
-    padding-bottom: 20px;
 
     font-weight: 100;	
     color: rgba(255, 255, 255, 1);
@@ -85,8 +97,31 @@ h1{
 		 0px 0px 13px rgba(0,0,0,0.4),
 		 0px 0px 23px rgba(0,0,0,0.4);
 }
+h2{
+    margin-bottom: 1%;
+    font-weight: 100;	
+    color: rgba(255, 255, 255, 1);
+    font-size: 4em;
+	
+	
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6),
+		 0px 0px 13px rgba(0,0,0,0.4),
+		 0px 0px 23px rgba(0,0,0,0.4);
+}
 #name{
-    margin-top: 50px;
+    float:right; margin-left:1%;margin-left: 15px;
+	color:whitesmoke;
+	display: block;
+	padding: 5px 10px;
+	
+	
+	font-size: 1.75em;
+	text-decoration: none;
+	textShadow: 0px 0px 4px #000;
+}
+
+#Home{ 
+    margin-top:5%;   
 }
 
 
@@ -98,13 +133,15 @@ ul {
 #nav {
     z-index: 10;
     /*background: #F1F1F1;*/
-    background:  url("images/noisy.png") repeat fixed center  bottom / 90px 70px #F1F1F1;
+    background:  url("images/noisy.png") repeat fixed center  bottom / 90px 70px;
+	background-color:#5F9EA0;
     left: 0;
     overflow: hidden;
     position: fixed;
     right: 0;
     top: 0;
-	
+
+    text-align: left;
 	
     
     -webkit-box-shadow: 0 0 5px black;
@@ -115,7 +152,7 @@ ul {
 }
 #nav a {
 	margin-left: 15px;
-	color:darkgray;
+	color:whitesmoke;
 	display: block;
 	padding: 5px 10px;
 	
@@ -125,8 +162,11 @@ ul {
 	textShadow: 0px 0px 4px #000;
 }
 #nav a:hover {
-	color: lightslategray;
+	color: #800000;
 	textShadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
+}
+#nav a.name:hover{
+        color: whitesmoke;
 }
 #nav .current a {
 	color:#800000;
@@ -141,6 +181,9 @@ p{
 	padding-top: 25px;
 	font-size: 1.5em;
 }
+.maroon{
+	color:#800000;
+}
 .whiteShadow{
     text-shadow: 0px 0px 3px rgba(255,255,255,0.6),
 		 0px 0px 13px rgba(255,255,255,0.4),
@@ -151,13 +194,7 @@ p{
 		 0px 0px 13px rgba(0,0,0,0.4),
 		 0px 0px 23px rgba(0,0,0,0.4);
 }
-.philosophyParagraph{
-    margin-top: 5%;
-    display: block;
-    
-    height: 200px;
-    width: 100%;
-}
+
 /* Focus */
 #Focus{
     
@@ -169,21 +206,50 @@ p{
 .person{    
     color: #50B9B9;
 }
-.courseContainer{
-    float:left;
-}
-.sideDisplay{
-    background:  url("images/noisy.png") repeat fixed center  bottom / 90px 70px #CCC;
-    float:right;
-    width:20%;
+.description{
+    color: rgba(0,0,0,0.5); 
+    text-shadow: 0px 0px 0px;
 }
 
-.description{
-    color: deepskyblue;
-    text-shadow: 0px 0px 3px rgba(0,0,0,0.7),
-		 0px 0px 13px rgba(0,0,0,0.6),
-		 0px 0px 23px rgba(0,0,0,0.6);
+/* course View page */
+#courseView{
+    z-index: 15;
+    position:fixed;
+   
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
     
+    width: 100%;
+    height:100%;
+    
+    background-color: rgba(6,1,8,0.6);
+    
+    display: none;  
+}
+.courseDescriptionWrapper{
+    
+    margin: auto; 
+
+    width:50%;
+    height:100%;
+
+    min-width: 400px;
+    background-color: #333;
+    color: #FFF;
+    -webkit-box-shadow: inset 0 0 5px 5px #222;
+    -moz-shadow: inset 0 0 5px 5px #222;
+    box-shadow: inset 0 0 5px 5px #222;
+}
+.courseDescription{
+    width:100%;
+    height:100%;
+    border:none;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
 }
 
 /* front page elements */
@@ -199,22 +265,13 @@ p{
 	width: 25%;
 	
 }
-
 #howdy{	
 	font-weight: normal;
 	font-size:60px;
 	color:#800000;
-	
 }
-
 
 /* Resume */
-.resumeContainer{
-    position: relative;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
 #resumePdf{
     display: block;
     margin-left: auto;
@@ -245,14 +302,13 @@ p{
     
 }
 a{
-    color: white;
+    color: #50B9B9;
     text-decoration: none;
     textShadow: 0px 0px 10px #000;
 }
-
 #hi{
-    color: dodgerblue;
+    color: #50B9B9;
 }
 #you{
-    color: dodgerblue;
+    color: #50B9B9;
 }

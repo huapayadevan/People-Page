@@ -1,0 +1,128 @@
+/*
+ *Note:
+ *
+ *text-shadow: [horizontal]px [vertical]px [blur]px [color];
+ *box-shadow:	[horizontal]px [vertical]px [blur]px [spread]px [color];
+ *
+ *margin: [top] [left] [bottom] [right]
+ */
+
+/* background */
+/*Possible background colors:
+#EEEEEE
+cadetblue
+#8DD4F7
+#1188FF
+#7BC7E7*/
+body {
+    background:  url("images/noisy.png") repeat fixed center  bottom / 90px 70px;
+	background-color:#B0AEAF;
+    background-position: center bottom;
+    background-attachment: fixed;
+	
+	
+	font-family: 'American Typewriter', Georgia, serif;
+	font-weight: 100;
+	text-align: center;
+	line-height: 18pt;
+	color: black;
+}
+
+/*hide normally visible elements*/
+.planet {
+    display:none;
+}
+.normal{
+	display:none;
+}
+#Focus{
+    display:none;
+}
+#nav {
+    display: none;
+}
+
+/* headers */
+h2{
+    font-weight: 100;	
+    color: rgba(255, 255, 255, 1);
+    font-size: 4em;
+    text-align:center;
+	margin-bottom:3%;
+	
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6),
+		 0px 0px 13px rgba(0,0,0,0.4),
+		 0px 0px 23px rgba(0,0,0,0.4);
+}
+
+/* text formating */
+p{	
+	font-size: 1.5em;
+}
+.maroon{
+	color:#800000;
+}
+.whiteShadow{
+    text-shadow: 0px 0px 3px rgba(255,255,255,0.6),
+		 0px 0px 13px rgba(255,255,255,0.4),
+		 0px 0px 23px rgba(255,255,255,0.4);
+}
+.blackShadow{
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6),
+		 0px 0px 13px rgba(0,0,0,0.4),
+		 0px 0px 23px rgba(0,0,0,0.4);
+}
+
+/* front page elements */
+#me {
+	margin:auto;
+
+	display:block;
+	border-style:inset;
+	border-color:grey black black black;
+
+	width: 25%;
+    min-width:200px;
+}
+#howdy{	
+	font-weight: normal;
+	font-size:60px;
+	color:#800000;
+    text-align:center;
+}
+
+/* Resume */
+#resumePdf{
+    display: block;
+	margin:auto;
+	
+	width:100%;
+
+    border-style:inset;
+    border-color:grey black black black;
+}
+
+/* Contact */
+.contactWrapper{
+    margin: auto;
+	padding-bottom:50%;
+    position: relative;
+    width: 50%;
+    max-height: 200px;
+    
+    color: white;
+    
+    textShadow: 0px 0px 10px #000;
+    
+}
+a{
+    color: #50B9B9;
+    text-decoration: none;
+    textShadow: 0px 0px 10px #000;
+}
+#hi{
+    color: #50B9B9;
+}
+#you{
+    color: #50B9B9;
+}

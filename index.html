@@ -1,168 +1,155 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="description" content="This is my webpage, there are many like it, but this is mine">
+	<meta name="description" content="Devan Huapaya, Computer Engineer from Texas A&M University, class of 2014. Experience in Object Oriented Programming and team leadership." />
+	<meta name="keywords" content="Devan Huapaya Object Oriented Programming Software Engineering Leadership Information Technology"/>
+	<meta name="viewport" content="width=device-width, user-scalable=false;">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<!--Main JQuery Library--> 
 	<script src="jlib/jquery-1.9.1.min.js"></script>
 	<!-- Plugin for color animation -->
 	<script src="jlib/jquery.animate-colors-min.js"></script><!-- to animate colors -->
-	<!-- Plugin for scrolling pictures on gallery page -->
-	<script src="jlib/jquery-scrolltofixed.js"></script>
 	<!-- Plugin for scrolling naviagation -->
 	<script src="jlib/jquery.scrollTo.js"></script>
 	<script src="jlib/jquery.nav.js"></script>
 	<!-- Plugin for Parrallax scrolling -->
 	<script src="jlib/jquery.stellar.js"></script>
-        <!-- Plugin for Page Slide -->
-        <link rel="stylesheet" type="text/css" href="pageslide/jquery.pageslide.css">
 	<!-- Javascript file -->
 	<script src="script.js"></script>	
 	<link rel="stylesheet" href='style.css'>
 	<title>Devan Huapaya</title>
         <link rel="shortcut icon" href="images/AMLogo.gif" />
+        <link rel="shortcut icon" href="images/AMLogo.ico" />
 </head>
 
 <body data-stellar-background-ratio="0.5" > 
 		
 		<!-------------------------------------- Main Container -------------------------------------->
 		
-		<div class="main" id="Home">
+		<div class="main"  >
                     
+                       
 			<ul id="nav">
+                             
 				<li class="current"><a href="#Home" id="homeLink" >Home</a></li>
-				<li><a href="#Philosophy" 	id="philosophyLink">Philosophy</a></li>
 				<li><a href="#Resume" 	id="resumeLink">Resume</a></li>
 				<li><a href="#Focus" 	id="focusLink">Focus</a></li>
 				<li><a href="#Contact" id="contactLink">Contact</a></li>
-				<!--<li><a href="#Secret" 	id="secretLink">Secret</a></li>-->
+                                <a id="name" class="name blackShadow" href="mailto:huapayadevan@tamu.edu?subject=Howdy, I just visited your website!">Devan Huapaya</a>
 			</ul>
 			
 			<!------------------------------ Parrallax Background Elements ------------------>
 			<div class="planet" data-stellar-horizontal-offset="0" data-stellar-ratio="0.4" data-stellar-background-ratio="0.05" ></div>
-			<!--<div class="triangle" data-stellar-ratio="0.4" data-stellar-horizontal-offset="0"></div>-->
 			
 		<!-------------------------------------- Home Page -------------------------------------->
 			
-			<div class="section">	
+			<div class="section" id="Home" itemscope itemtype="http://schema.org/Person" >	
 			
-				<h1 id="name" >Devan Huapaya</h1>
 				
-				<img id="me"   src="images/DevanHuapaya.jpg" alt="Me and some friends!" title="That's me on the right!" />
+				
+				<img id="me" src="images/DevanHuapaya.jpg" alt="Me and some friends!" title="That's me on the right!" />
 				
 				<p >
 					<br>
-					<br>
-					<font id="howdy" class="whiteShadow">Howdy<i>!</i></font>
-					<br>
+					<font id="howdy" class="">Howdy<i>!</i></font>
 					<br>
 					<br>
-					My name is Devan,
+					<br>
+					My name is <span itemprop="name"><a class="maroon" href="mailto:huapayadevan@tamu.edu?subject=Howdy, I just visited your website!">Devan Huapaya</a></span>,
+				    <br />
+                                    <br />
+					I am a <span itemprop="jobTitle">Computer Engineer</span> at <font class="maroon"><span itemprop="affiliation">Texas A&M University.</span></font><br>
+				    <br />
+                                    <br />
+					<font class="normal">
+						I live to insight innovation, find the why in every line of code,<br>
+						break the status quo, and draw cats.<br>
+					</font>
+					<font class="simple">
+						I live to insight innovation, find the why in every line of code,
+						break the status quo, and draw cats.<br>
+					</font>
+					<br />
 				</p>
-				<p class="whiteShadow">
-					The adorably fuzzy gentleman in the picture is me.<br>
-					I am a Computer Engineer at Texas A&M University.<br>
-				</p>
-				<p class="whiteShadow">
-					I live to insight innovation, find the why in every line of code,<br>
-					break the status quo, and draw cats.<br>
-				</p>
-				<br/>
 			</div>
-		<!-------------------------------------- Philosophy Page -------------------------------------->
-		
-			<div class="section" id="Philosophy" >
-				<h1>My Philosophy</h1>
-			
-				<p class="philosophyParagraph whiteShadow">
-                                    Start with <font class="maroon">why</font>. Learn <font class="maroon">how</font> to make it happen. <font class="maroon">Create</font> something wonderful.
-				</p>
-				
-			</div>
+                
 		<!-------------------------------------- Resume Page -------------------------------------->
 		
 			<div class="section" id="Resume">
-				<h1>Resume</h1>
+				<h2>Resume</h2>
 				
-                                <a href="docs/Resume.pdf"><img id="resumePdf" src="images/Resume.png" title="right-click > save link as. for pdf copy!" ></a>
+                                <a href="docs/DevanHuapayaResume.pdf"><img id="resumePdf" src="images/Devan_Huapaya_Resume.png" title="right-click > save link as. for pdf copy!" ></a>
 
 			</div>
-		<!-------------------------------------- Course Work Page -------------------------------------->
-			<div class="section blackShadow" id="Focus">
-				<h1>Focus</h1>
+		<!-------------------------------------- Focus Page -------------------------------------->
+                
+                            <div class="section blackShadow" id="Focus">
+				<h2 id="focusHead">Focus</h2>
 				
-                                <!--   Opted not to use the following intro                      
-                                <p>
-                                    If you came here looking for a bulleted list and graph of what programming languages, look no further!<br>
-                                    They are not here!<br>
-                                    <br>
-                                    If you would like to take a look at what I have focused on and school and in my free time, see bellow!<br>
-                                </p>
-                                -->
-                                
                                 <p>
                                     I have taken a few classes in<br>
-                                    <a class="course compSci" href="javascript:$.pageslide({ href:'pageslide/_compSci.html' })">Computer Science</a>,<br>
-                                    <a class="course ecen"    href="javascript:$.pageslide({ href:'pageslide/_ecen.html' })">Electrical Engineering</a>, and <br>
-                                    <a class="course math"    href="javascript:$.pageslide({ href:'pageslide/_math.html' })">Mathematics</a><br>
+                                    <a class="course compSci" href="javascript: Course Description" >Computer Science</a>,<br>
+                                    <a class="course ecen"    href="javascript: Course Description">Electrical Engineering</a>, and <br>
+                                    <a class="course math"    href="javascript: Course Description">Mathematics</a><br>
                                     while in school. 
                                 </p>
                                 <br>
                                 <p>
-                                    I am also a very large fan and follower of these fine fellows:<br>
-                                    <a class="course steve" href="http://www.stevemcconnell.com/" target="_blank">Steve McConnell</a>, <font class='description' id="steveDescription">His site is hideous, but his books are beautiful!</font> <br> 
-                                    <a class="course jeff" href="http://www.codinghorror.com/blog/" target="_blank">Jeff Atwood</a>, <font class='description' id="jeffDescription">Programming blogger and co-founder of StackOverflow</font><br>
-                                    <a class="course joel" href="http://www.joelonsoftware.com" target="_blank">Joel Splosky</a>, and <font class='description' id="joelDescription">Wrote great articles on PM and co-founder of StackOverflow</font> <br>
-                                    <a class="course dale" href="http://www.goodreads.com/author/show/3317.Dale_Carnegie" target="_blank">Dale Carnigie</a> <font class='description' id="daleDescription">The peoplest people person writer [of all time!]</font><br>
+                                    Also, here are some links to the sites of some of my favorite people:<br>
+                                    <a class="person steve" href="http://www.stevemcconnell.com/" target="_blank">Steve McConnell</a>, <font class='description' id="steveDescription">His site is hideous, but his books are beautiful!</font> <br> 
+                                    <a class="person jeff" href="http://www.codinghorror.com/blog/" target="_blank">Jeff Atwood</a>, <font class='description' id="jeffDescription">Programming blogger and co-founder of StackOverflow</font><br>
+                                    <a class="person joel" href="http://www.joelonsoftware.com" target="_blank">Joel Splosky</a>, and <font class='description' id="joelDescription">Wrote great articles on PM and co-founder of StackOverflow</font> <br>
+                                    <a class="person dale" href="http://www.goodreads.com/author/show/3317.Dale_Carnegie" target="_blank">Dale Carnigie</a> <font class='description' id="daleDescription">The peoplest people person writer [of all time!]</font><br>
                                 </p>
-			</div>			
+			</div>		
+		<!-------------------------------------- Course Work View -------------------------------------->
+                        <div class="section blackShadow" id="courseView">
+                            <div class="courseDescriptionWrapper">
+                                <iframe id="courseDescription" src="" width="100%" height="100%" ></iframe>
+                            </div>
+                        </div>
+                
 		<!-------------------------------------- Contact Page -------------------------------------->
+                
 			<div class="section" id="Contact">
-				<h1>Contact</h1>
+				<h2>Contact</h2>
 				<div class="contactWrapper">
 					<p class="blackShadow">
-						If you would like to work with me, or just <a id="hi">say hi</a>,<br>
-                                                <font id="you">I would love to hear about what you do.</font><br>
-						feel free to send me an email at:<br>
-						<br>
-						<br>
-						<a class="contact" href="mailto:huapayadevan@tamu.edu?subject=Howdy, I just visited your website!">
-							huapayadevan@tamu.edu
-						</a>
+                                            If you would like to work with me, or just <a id="hi" href="javascript: hi!">say hi</a>,<br>
+                                                <font id="you">I would love to hear about what you do!</font><br>
                                                 
+                                                <font class="normal">
+                                                    feel free to send me an email at:<br>
+                                                    <br>
+                                                    <br>
+                                                    <a class="contact" href="mailto:huapayadevan@tamu.edu?subject=Howdy, I just visited your website!">
+                                                            huapayadevan@tamu.edu
+                                                    </a>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    I'm also on 
+                                                    <a class="contact" href="http://www.linkedin.com/pub/devan-huapaya/76/45/947" target="_blank">
+                                                            LinkedIn!
+                                                    </a>
+                                                </font>
+                                                
+                                                <font class="simple">
+                                                   feel free to send me 
+                                                   <a class="contact" href="mailto:huapayadevan@tamu.edu?subject=Howdy, I just visited your website!">
+                                                       an email 
+                                                   </a>
+                                                    , or find me on
+                                                    <a class="contact" href="http://www.linkedin.com/pub/devan-huapaya/76/45/947" target="_blank">
+                                                            LinkedIn!
+                                                    </a>
+                                                </font>
 					</p>
 					
 				</div>
 			</div>
-                </div>
-
+    </div>
+                <!-- This is preventing my stellar plugin from working. No, it doesn't make sense-->
         <script  type="text/javascript" src="jlib/jquery.pageslide.min.js"></script>
 </body>
 
-
-
-<!--Dive for self made page slide element. Implement in version 2!
-
-<div style="    position: absolute;
-                                    position: fixed;
-                                    top: 0;
-                                    right:0;
-                                    height: 100%;
-                                    z-index: 8;
-
-                                    /* Specify the width of your pageslide here */
-                                    width: 400px;
-                                    padding: 20px;
-
-                                    /* These styles are optional, and describe how the pageslide will look */
-                                    background-color: #333;
-                                    color: #FFF;
-                                    -webkit-box-shadow: inset 0 0 5px 5px #222;
-                                    -moz-shadow: inset 0 0 5px 5px #222;
-                                    box-shadow: inset 0 0 5px 5px #222;">
-                        <h1 style='margin-top:10%;'>
-                            hai!
-                        </h1>
-
-                    </div>
-
--->
