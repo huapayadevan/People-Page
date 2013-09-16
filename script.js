@@ -33,7 +33,7 @@ $(function() {
 	$(".person").linkHover();	
         // initiate one page navigation plugin
 	$('#nav').onePageNav({
-		scrollOffset: 50
+		scrollOffset: 75
 	});
         
         
