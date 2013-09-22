@@ -14,6 +14,8 @@
 	<script src="jlib/jquery.nav.js"></script>
 	<!-- Plugin for Parrallax scrolling -->
 	<script src="jlib/jquery.stellar.js"></script>
+	<!-- Plugin for Windows Plugin -->
+	<script src="jlib/jquery.windows.js"></script>
 	<!-- Javascript file -->
 	<script src="script.js"></script>	
 	<link rel="stylesheet" href='style.css'>
@@ -22,7 +24,7 @@
         <link rel="shortcut icon" href="images/AMLogo.ico" />
 </head>
 
-<body data-stellar-background-ratio="0.5" > 
+<body  > 
 		
 		<!-------------------------------------- Main Container -------------------------------------->
 		
@@ -39,11 +41,11 @@
 			</ul>
 			
 			<!------------------------------ Parrallax Background Elements ------------------>
-			<div class="planet" data-stellar-horizontal-offset="0" data-stellar-ratio="0.4" data-stellar-background-ratio="0.05" ></div>
+			<!--<div class="planet" data-stellar-horizontal-offset="0" data-stellar-ratio="0.4" data-stellar-background-ratio="0.05" ></div>-->
 			
 		<!-------------------------------------- Home Page -------------------------------------->
 			
-			<div class="section" id="Home" itemscope itemtype="http://schema.org/Person" >	
+			<section class="window" id="Home" itemscope itemtype="http://schema.org/Person">	
 			
 				
 				
@@ -71,47 +73,56 @@
 					</font>
 					<br />
 				</p>
-			</div>
+			</section>
                 
 		<!-------------------------------------- Resume Page -------------------------------------->
 		
-			<div class="section" id="Resume">
+			<section class="window" id="Resume" >
 				<h2>Resume</h2>
 				
+<!--                                <object id="resumePdf" type="application/pdf" data="docs/DevanHuapayaResume.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0" id="pdf_content">
+                                    <p>Insert your error message here, if the PDF cannot be displayed.</p>
+                                </object>-->
                                 <a href="docs/DevanHuapayaResume.pdf"><img id="resumePdf" src="images/Devan_Huapaya_Resume.png" title="right-click > save link as. for pdf copy!" ></a>
 
-			</div>
+			</section>
 		<!-------------------------------------- Focus Page -------------------------------------->
                 
-                            <div class="section blackShadow" id="Focus">
+                            <section class="window blackShadow" id="Focus" >
 				<h2 id="focusHead">Course Work</h2>
-				
-                                <p>
-                                    I have taken a few classes in<br>
-                                    <a class="course compSci" href="javascript: Course Description" >Computer Science</a>,<br>
-                                    <a class="course ecen"    href="javascript: Course Description">Electrical Engineering</a>, and <br>
-                                    <a class="course math"    href="javascript: Course Description">Mathematics</a><br>
-                                    while in school. 
-                                </p>
-                                <br>
-                                <p>
-                                    Also, here are some links to the sites of some of my favorite people:<br>
-                                    <a class="person steve" href="http://www.stevemcconnell.com/" target="_blank">Steve McConnell</a>, <font class='description' id="steveDescription">Renowned programming author, and managment consultant</font> <br> 
-                                    <a class="person jeff" href="http://www.codinghorror.com/blog/" target="_blank">Jeff Atwood</a>, <font class='description' id="jeffDescription">Programming blogger and co-founder of StackOverflow</font><br>
-                                    <a class="person joel" href="http://www.joelonsoftware.com" target="_blank">Joel Splosky</a>, and <font class='description' id="joelDescription">Wrote articles on PM and co-founder of StackOverflow</font> <br>
-                                    <a class="person dale" href="http://www.goodreads.com/author/show/3317.Dale_Carnegie" target="_blank">Dale Carnigie</a> <font class='description' id="daleDescription">Author and lecturer on public speaking and interpersonal skills</font><br>
-                                </p>
-			</div>		
+                                <div id="workWrapper">
+                                    <p>
+                                        I have taken a few classes in<br>
+                                        <a class="course compSci" href="javascript: Course Description" >Computer Science</a>,<br>
+                                        <a class="course ecen"    href="javascript: Course Description">Electrical Engineering</a>, and <br>
+                                        <a class="course math"    href="javascript: Course Description">Mathematics</a><br>
+                                        while in school. 
+                                    </p>
+                                    <br>
+                                    <p>
+                                        In addition to course work I have also worked on<br>
+                                        <a class="person steve" href="http://www.stevemcconnell.com/" target="_blank">this website</a>, <font class='description' id="steveDescription">Renowned programming author, and managment consultant</font> <br> 
+                                        <a class="person jeff" href="http://www.codinghorror.com/blog/" target="_blank">Java EE web applications</a>, <font class='description' id="jeffDescription">Programming blogger and co-founder of StackOverflow</font><br>
+                                        <a class="person joel" href="http://www.joelonsoftware.com" target="_blank">Windows8 apps</a>, and <font class='description' id="joelDescription">Wrote articles on PM and co-founder of StackOverflow</font> <br>
+                                        <a class="person dale" href="http://www.goodreads.com/author/show/3317.Dale_Carnegie" target="_blank">a simple desktop application</a> <font class='description' id="daleDescription">Author and lecturer on public speaking and interpersonal skills</font><br>
+                                    </p>
+                                </div>
+			</section>		
 		<!-------------------------------------- Course Work View -------------------------------------->
-                        <div class="section blackShadow" id="courseView">
+                        <div class="section grayOverlay" id="courseView">
                             <div class="courseDescriptionWrapper">
-                                <iframe id="courseDescription" src="" width="100%" height="100%" ></iframe>
+                                <iframe id="courseDescription" src="" width="100%" height="100vh" ></iframe>
                             </div>
                         </div>
-                
+                        
+                <div class="section grayOverlay" id="workView">
+                    <div class="workDescriptionWrapper">
+                        <iframe workDescription" src="" width="100%" height="100vh" ></iframe>
+                    </div>
+                </div>
 		<!-------------------------------------- Contact Page -------------------------------------->
                 
-			<div class="section" id="Contact">
+			<section class="window" id="Contact">
 				<h2>Contact</h2>
 				<div class="contactWrapper">
 					<p class="blackShadow">
@@ -147,9 +158,11 @@
 					</p>
 					
 				</div>
-			</div>
+			</section>
     </div>
                 <!-- This is preventing my stellar plugin from working. No, it doesn't make sense-->
         <script  type="text/javascript" src="jlib/jquery.pageslide.min.js"></script>
+         
+
 </body>
 

@@ -27,6 +27,9 @@ body {
 	line-height: 18pt;
 	color: black;
 }
+div{
+    min-height: 100vh;
+}
 
 /*hide normally visible elements*/
 .planet {
@@ -48,7 +51,7 @@ h2{
     color: rgba(255, 255, 255, 1);
     font-size: 4em;
     text-align:center;
-	margin-bottom:3%;
+    margin-bottom:3%;
 	
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6),
 		 0px 0px 13px rgba(0,0,0,0.4),
@@ -82,21 +85,21 @@ p{
 	border-color:grey black black black;
 
 	width: 25%;
-    min-width:200px;
+        min-width:200px;
 }
 #howdy{	
 	font-weight: normal;
 	font-size:60px;
 	color:#800000;
-    text-align:center;
+        text-align:center;
 }
 
 /* Resume */
 #resumePdf{
     display: block;
-	margin:auto;
-	
-	width:100%;
+    margin:auto;
+    
+    width:100%;
 
     border-style:inset;
     border-color:grey black black black;
@@ -105,7 +108,7 @@ p{
 /* Contact */
 .contactWrapper{
     margin: auto;
-	padding-bottom:50%;
+    padding-bottom:50%;
     position: relative;
     width: 50%;
     max-height: 200px;

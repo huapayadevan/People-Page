@@ -5,12 +5,12 @@ $.fn.linkHover = function() {
 	
 	
 	this.hover(function(){
-		$(this).animate({color: '#B9E3E3'},200);
+		$(this).animate({color: '#CBFDFE'},200);
 		},function(){
 			if ($(this).hasClass('current')){
 				return;
 			}else{
-				$(this).animate({color: '#50B9B9'},200  );
+				$(this).animate({color: '#00BFFF'},200  );
 			}
 				
 	});
@@ -19,11 +19,26 @@ $.fn.linkHover = function() {
 
 // function called when document is loaded
 $(function() {
+    
+        // ---------------- MOBILE DEVICE DETECTION ---------------- //
 	if( /Android|webOS|iPhone|iPod|BlackBerry|kindle|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		$('link[href="style.css"]').attr('href','simpleStyle.css');	
 	}
 
-        // intiate parallax elements plugin
+       
+        // ---------------- WINDOW AUTO FOCUS ---------------- //
+        var $windows = $('.window');
+
+        $windows.windows({
+            snapping: true,
+            snapSpeed: 750,
+            snapInterval: 1100,
+            onScroll: function(s){},
+            onSnapComplete: function($el){},
+            onWindowEnter: function($el){}
+        });
+        
+        // ---------------- PARALLAX ELEMENTS PLUGIN ---------------- //
 	$.stellar({
 		  horizontalScrolling: false
 	});
@@ -32,9 +47,7 @@ $(function() {
 	$(".course").linkHover();
 	$(".person").linkHover();	
         // initiate one page navigation plugin
-	$('#nav').onePageNav({
-		scrollOffset: 75
-	});
+	$('#nav').onePageNav();
         
         
 	
