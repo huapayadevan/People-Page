@@ -26,28 +26,13 @@ body {
 .simple{
 	display: none;
 }
+
 iframe{
     width:100%;
     height:100%;
     border:none;
 }
-/* parrallax shapes! */
-.planet {
-   background-color: #800000;
-    background:  url("images/galaxy.jpg") repeat center bottom fixed;
-    
-    
-    border-radius: 1000px 1000px 1000px 1000px;
-    border-color: black;
-    box-shadow: inset 0px 0px  20px 10px rgba(0,0,0,0.6);
-    
-    height: 2000px;
-    left: -650px;
-    position: fixed;
-    top: 550px;
-    width: 2000px;
-    z-index: -1;
-}
+
 section{
     height: 100vh;
     padding-top: 2%;
@@ -70,40 +55,37 @@ section{
     background:  url("images/bottom.png") no-repeat fixed center bottom -20%;
     /*background-position:center -10400%;*/
     background-size: auto;
-    /*background-color: #eee9e9;*/
-    /*background-color: #914563;*/
-    /*background-color: #006b77;*/
-    background-color: #adafaa;
-    /*background-color: #EAB193;*/
+    
+    color: #050500;
+    /*background-color: #1BABB7;*/
+    background-color: #1896a1;
 }
-#Resume{
+#Work{
     /*background:  url("images/xv.png") repeat fixed;*/
     background:  url("images/bottom.png") no-repeat fixed center bottom -20%;
     /*background-color: #bdc3c7;*/
     /*background-color: #9BCFC2;*/
-    background-color: #96938e;
+    background-color: #4A5C81   ;
     /*background-color: #F6F6EA;*/
     right:0;
     margin-right: 0;
     margin-left: 0;
     
 }
-#Focus{
+#School{
     /*background:  url("images/bg1.jpg") repeat fixed;*/  
     background:  url("images/bottom.png") no-repeat fixed center bottom -20%;
-    background-color: #7491A3;
+    background-color: #7C6995;
     /*background-color: #006b77;*/
     /*background-color: #914563;*/
     /*background-color: #EBB492;*/
     
     color: whitesmoke;
 }
-#workWrapper{
-     margin: auto;
-    
-    position: relative;
-    width: 50%;
-    max-height: 200px;
+#workText, #schoolText{
+    float:left;
+    width: 45%;
+    margin-left:5%;
     
     color: white;
     
@@ -209,7 +191,8 @@ p{
 	font-size: 1.5em;
 }
 .maroon{
-	color:#800000;
+	/*color:gainsboro;*/
+        color: whitesmoke;
 }
 .whiteShadow{
     text-shadow: 0px 0px 3px rgba(255,255,255,0.6),
@@ -248,7 +231,7 @@ p{
     width: 100%;
     height:100%;
     
-    background-color: rgba(6,1,8,0.6);
+    background-color: rgba(6,1,8,0.3);
     
     display: none;  
 }
@@ -256,7 +239,8 @@ p{
 .courseDescriptionWrapper{
     
     margin: auto; 
-
+    margin-right:0;
+    
     width:50%;
     height:100%;
 
@@ -290,18 +274,18 @@ p{
     width: 100%;
     height:100%;
     
-    background-color: rgba(6,1,8,0.6);
+    background-color: rgba(6,1,8,0.3);
     
     display: none;  
 }
 
-.workDescriptionWrapper{
+#workDescriptionWrapper{
     
     margin: auto; 
-
+    margin-right:0;
     width:50%;
     height:100%;
-
+    
     min-width: 400px;
     background-color: #333;
     color: #FFF;
@@ -313,6 +297,7 @@ p{
     width:100%;
     height:100%;
     border:none;
+    padding:0;
     top:0;
     left:0;
     right:0;
@@ -324,17 +309,17 @@ p{
 	margin-right:10%;
 	display:block;
 	float:right;
-	border-style:inset;
-	border-color:grey black black black;
-	-webkit-box-shadow: 0 0 10px black;
-        box-shadow: 0 0 10px black;
+	border-style:solid;
+        border-bottom-width: thick;
+        border-color:black;
 	width: 25%;
 	
 }
 #howdy{	
 	font-weight: normal;
 	font-size:60px;
-	color:#800000;
+/*	color: gainsboro;*/
+        color: whitesmoke;
 }
 
 /* Resume */
@@ -376,8 +361,9 @@ a{
     textShadow: 0px 0px 10px #000;
 }
 #hi{
-    color: #50B9B9;
+    color: #00BFFF;
 }
 #you{
-    color: #50B9B9;
+    line-height: 1.5em;
+    color: #00BFFF;
 }

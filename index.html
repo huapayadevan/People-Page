@@ -34,8 +34,8 @@
 			<ul id="nav">
                              
 				<li class="current"><a href="#Home" id="homeLink" >Home</a></li>
-				<li><a href="#Resume" 	id="resumeLink">Resume</a></li>
-				<li><a href="#Focus" 	id="focusLink">Work</a></li>
+				<li><a href="#Work" 	id="resumeLink">Work</a></li>
+				<li><a href="#School" 	id="focusLink">School</a></li>
 				<li><a href="#Contact" id="contactLink">Contact</a></li>
                                 <a id="name" class="name blackShadow" href="mailto:huapayadevan@tamu.edu?subject=Howdy, I just visited your website!">Devan Huapaya</a>
 			</ul>
@@ -75,37 +75,59 @@
 				</p>
 			</section>
                 
-		<!-------------------------------------- Resume Page -------------------------------------->
+		<!-------------------------------------- Work Page -------------------------------------->
 		
-			<section class="window" id="Resume" >
+			<section class="window" id="Work" >
+				<h2>Work Experience</h2> 
+                                <div class="blackShadow"id="workText">
+                                    <p>
+                                        I have worked at <br>
+                                       <a class="work helpDesk" href="javascript: Work Description">Help Desk Central</a>, and<br>
+                                        <a class="work cgi" href="javascript: Work Description">CGI</a><br>
+                                    </p>
+                                    <p>
+                                        I have volunteered at <br>
+                                        <a class="work kanm" href="javascript: Work Description">KANM</a>, and<br>
+                                        <a class="work campQuest" href="javascript: Work Description">Camp Quest Texas</a><br>
+                                    </p>
+                                    
+                                    <p>
+                                        <br>
+                                        <br>
+                                        My resume is also available as a <a class="work" href="docs/DevanHuapayaResume.pdf" target="_blank">PDF</a>
+                                    </p>
+                                    
+                                </div>
+			</section>
+                <!-------------------------------------- Resume Page -------------------------------------->
+                <!-------------------------------------- For Mobile View -------------------------------------->
+		
+			<div class="section simple" id="Resume">
 				<h2>Resume</h2>
 				
-<!--                                <object id="resumePdf" type="application/pdf" data="docs/DevanHuapayaResume.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0" id="pdf_content">
-                                    <p>Insert your error message here, if the PDF cannot be displayed.</p>
-                                </object>-->
                                 <a href="docs/DevanHuapayaResume.pdf"><img id="resumePdf" src="images/Devan_Huapaya_Resume.png" title="right-click > save link as. for pdf copy!" ></a>
 
-			</section>
-		<!-------------------------------------- Focus Page -------------------------------------->
+			</div>
+		<!-------------------------------------- Work View -------------------------------------->
+                        <div class="section grayOverlay" id="workView">
+                            <div id ="workDescriptionWrapper">
+                                <iframe id="workDescription" src="" width="100%" height="100vh" ></iframe>
+                            </div>
+                        </div>
+		<!-------------------------------------- School Page -------------------------------------->
                 
-                            <section class="window blackShadow" id="Focus" >
+                            <section class="window blackShadow" id="School" >
 				<h2 id="focusHead">Course Work</h2>
-                                <div id="workWrapper">
+                                <div id="workText" style="vertical-align: middle;">
                                     <p>
                                         I have taken a few classes in<br>
                                         <a class="course compSci" href="javascript: Course Description" >Computer Science</a>,<br>
                                         <a class="course ecen"    href="javascript: Course Description">Electrical Engineering</a>, and <br>
                                         <a class="course math"    href="javascript: Course Description">Mathematics</a><br>
-                                        while in school. 
+                                        while attending A&M. 
                                     </p>
                                     <br>
-                                    <p>
-                                        In addition to course work I have also worked on<br>
-                                        <a class="person steve" href="http://www.stevemcconnell.com/" target="_blank">this website</a>, <font class='description' id="steveDescription">Renowned programming author, and managment consultant</font> <br> 
-                                        <a class="person jeff" href="http://www.codinghorror.com/blog/" target="_blank">Java EE web applications</a>, <font class='description' id="jeffDescription">Programming blogger and co-founder of StackOverflow</font><br>
-                                        <a class="person joel" href="http://www.joelonsoftware.com" target="_blank">Windows8 apps</a>, and <font class='description' id="joelDescription">Wrote articles on PM and co-founder of StackOverflow</font> <br>
-                                        <a class="person dale" href="http://www.goodreads.com/author/show/3317.Dale_Carnegie" target="_blank">a simple desktop application</a> <font class='description' id="daleDescription">Author and lecturer on public speaking and interpersonal skills</font><br>
-                                    </p>
+                                    
                                 </div>
 			</section>		
 		<!-------------------------------------- Course Work View -------------------------------------->
@@ -114,12 +136,7 @@
                                 <iframe id="courseDescription" src="" width="100%" height="100vh" ></iframe>
                             </div>
                         </div>
-                        
-                <div class="section grayOverlay" id="workView">
-                    <div class="workDescriptionWrapper">
-                        <iframe workDescription" src="" width="100%" height="100vh" ></iframe>
-                    </div>
-                </div>
+               
 		<!-------------------------------------- Contact Page -------------------------------------->
                 
 			<section class="window" id="Contact">

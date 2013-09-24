@@ -1,0 +1,86 @@
+#pageslide {
+    /* These styles MUST be included. Do not change. */
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 8;
+    
+    /* Specify the width of your pageslide here */
+    padding-top: 0;
+    padding-bottom: 50px;
+    
+}
+#imageWrapperWeb, #imageWrapperCgi,#imageWrapperKanm,#imageWrapperCQ, #imageWrapperHDC{
+                background-position: top;
+                background-attachment: fixed;
+                
+                height:40vh;
+                width: 100%;
+                
+                margin-left: 0;
+                margin-top: 0;
+                margin-right:0;
+                top:0;
+                right:0;
+                left:0;
+}
+#imageWrapperWeb{   background-image: url(images/oldSite.png);}     
+#imageWrapperCgi{   background-image: url(images/cgi.png); background-size: 90%; background-repeat: no-repeat;}
+#imageWrapperKanm{  background-image: url(images/library.jpg); background-position: 0% 0%; background-repeat:no-repeat;}
+#imageWrapperCQ{    background-image: url(images/cqSign.jpg); background-position: 0% -40%; background-size: 100%; background-repeat:no-repeat;}
+#imageWrapperHDC{   background-image: url(images/hdc.png); background-position: left 0%; background-size: 150%; background-repeat:no-repeat;}
+
+.department{
+    color: deeppink;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: auto;
+}
+
+.italics{
+    font-style: italic;
+}
+
+.company{
+    text-align:center;
+    color: deeppink;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: auto;
+}
+
+.course{
+    top: 60px;
+    padding: 2%;
+}
+
+.courseTitle{
+    color: deepskyblue;
+}
+
+body {
+    right:0;
+    padding-bottom:30px;
+    font-family: 'Josefin Slab', serif;
+    font: 14px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+    color: #EFEFEF;
+    margin:0;
+    
+    background-color: #333;
+/*    -webkit-box-shadow: inset 0 0 5px 5px #222;
+    -moz-shadow: inset 0 0 5px 5px #222;
+    box-shadow: inset 0 0 5px 5px #222;*/
+}
+       
+.work{
+    padding:2%;
+}
+h2 { 
+    color: #FFF; 
+    margin-top:50%;
+}

@@ -23,6 +23,7 @@ $(function() {
         // ---------------- MOBILE DEVICE DETECTION ---------------- //
 	if( /Android|webOS|iPhone|iPod|BlackBerry|kindle|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		$('link[href="style.css"]').attr('href','simpleStyle.css');	
+                $('link[href="script.js"]').attr('href','simpleScript.js');
 	}
 
        
@@ -46,6 +47,7 @@ $(function() {
         // initiate function for animation on course and person hover
 	$(".course").linkHover();
 	$(".person").linkHover();	
+        $('.work').linkHover();
         // initiate one page navigation plugin
 	$('#nav').onePageNav();
         
@@ -69,48 +71,41 @@ $(function() {
                 $('#you').show('medium');
         });
         
-        // link hover animations for people on focus page
-        $("#steveDescription").hide();
-        $("#jeffDescription").hide();
-        $("#joelDescription").hide();
-        $("#daleDescription").hide();
-        $(".steve").hover(function(){
-			$("#steveDescription").show();
-		},function(){
-			$("#steveDescription").hide();
-	});
+        // click animations for work experience
+        $("#workView").hide();
+        $(".cgi").click(function(){
+            $("#workDescription").attr("src", "html/_cgi.html");
+            $("#workView").delay(150).fadeIn('slow');
+        });
+        $(".kanm").click(function(){
+            $("#workDescription").attr("src", "html/_kanm.html");
+            $("#workView").delay(150).fadeIn('slow');
+        });
+        $(".campQuest").click(function(){
+            $("#workDescription").attr("src", "html/_cq.html");
+            $("#workView").delay(150).fadeIn('slow');
+        });
+        $(".helpDesk").click(function(){
+            $("#workDescription").attr("src", "html/_HDC.html");
+            $("#workView").delay(150).fadeIn('slow');
+        });
         
-        $(".jeff").hover(function(){
-			$("#jeffDescription").show();
-		},function(){
-			$("#jeffDescription").hide();
-	});
-        
-        $(".joel").hover(function(){
-			$("#joelDescription").show();
-		},function(){
-			$("#joelDescription").hide();
-	});
-        
-        $(".dale").hover(function(){
-			$("#daleDescription").show();
-		},function(){
-			$("#daleDescription").hide();
-	});
-        
+         $('#workView').click(function(){
+            $(this).fadeOut();
+         });
         // click animations for courses
         $('#courseView').hide();
         $(".compSci").click(function(){
-            $("#courseView").fadeIn('fast');
-            $("#courseDescription").attr("src", "pageslide/_compSci.html");
+            $("#courseDescription").attr("src", "html/_compSci.html");
+            $("#courseView").delay(150).fadeIn('slow');
         });
         $(".ecen").click(function(){
-            $("#courseView").fadeIn();
-            $("#courseDescription").attr("src", "pageslide/_ecen.html");
+            $("#courseDescription").attr("src", "html/_ecen.html");
+            $("#courseView").delay(150).fadeIn('slow');
         });
         $(".math").click(function(){
-            $("#courseView").fadeIn();
-            $("#courseDescription").attr("src", "pageslide/_math.html");
+            $("#courseDescription").attr("src", "html/_math.html");
+            $("#courseView").delay(150).fadeIn('slow');
         });
         
          $('#courseView').click(function(){
